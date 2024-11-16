@@ -5,7 +5,7 @@ def test_bcli(node_factory, bitcoind, chainparams):
     """
     Based on the test_bcli from Core Lightning
     """
-    node = node_factory.get_node(opts={
+    node = node_factory.get_node(options={
         "disable-plugin": "bcli",
         "plugin": os.path.join(os.getcwd(), 'trustedcoin'),
     })
